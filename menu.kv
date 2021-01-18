@@ -7,12 +7,15 @@
         padding: 50
         spacing: 20
 
-        FileChooserIconView:
-            id: filechooser
-            on_selection: my_widget.selected(filechooser.selection)
-
         Button:
             id: button
             size:(80,80)
-            text: start
+            text: 'start'
             on_press: my_widget.on_click()
+
+
+        TextInput:
+            id: input
+            height: 100
+            text: my_widget.textval
+
